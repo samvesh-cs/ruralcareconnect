@@ -1,0 +1,36 @@
+// ── Dummy patient records ──────────────────────────────────────
+export const dummyPatients = [
+  {
+    id: 'P-1001',
+    name: 'Savitri Devi',
+    age: 42,
+    gender: 'Female',
+    village: 'Rampur Kalan',
+    district: 'Unnao',
+    phone: '9876543210',
+    bloodGroup: 'B+',
+    registeredAt: '2026-03-13T08:30:00',
+  },
+  {
+    id: 'P-1002',
+    name: 'Raju Prasad',
+    age: 28,
+    gender: 'Male',
+    village: 'Bhitaura',
+    district: 'Lucknow',
+    phone: '9823456701',
+    bloodGroup: 'O+',
+    registeredAt: '2026-03-13T09:15:00',
+  },
+  {
+    id: 'P-1003',
+    name: 'Meena Kumari',
+    age: 35,
+    gender: 'Female',
+    village: 'Sareni',
+    district: 'Raebareli',
+    phone: '9011234567',
+    bloodGroup: 'A+',
+    registeredAt: '2026-03-13T10:00:00',
+  },
+]
