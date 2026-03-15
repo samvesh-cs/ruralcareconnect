@@ -6,7 +6,7 @@ import authRoutes from './routes/auth.js'
 import caseRoutes from './routes/cases.js'
 
 const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
+const __dirname  = path.dirname(__filename)
 
 const app = express()
 const PORT = process.env.PORT || 5000
@@ -29,7 +29,7 @@ const distPath = path.join(__dirname, '..', 'dist')
 app.use(express.static(distPath))
 
 // All non-API routes → index.html (React Router handles them)
-app.get('*', (_req, res) => {
+app.get('{*path}', (_req, res) => {
   res.sendFile(path.join(distPath, 'index.html'))
 })
 
@@ -37,3 +37,4 @@ app.get('*', (_req, res) => {
 app.listen(PORT, () => {
   console.log(`✅ RuralCareConnect running on http://localhost:${PORT}`)
 })
+
